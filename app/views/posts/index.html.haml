@@ -23,3 +23,23 @@
         工数
       .text
         備考
+    - @posts.each do |post|  
+      .main-contents
+        .name
+          = post.name
+        .product_name
+          = post.product_name
+        .work_name
+          = post.work_name
+        .created_at 
+          = post.created_at.strftime("%H:%M")
+        .updated_at
+          = post.updated_at.strftime("%H:%M")
+        .work_time
+          rrrr
+        .quantity
+          = post.quantity
+        .production_costs
+          fffff
+        .text
+          = post.text

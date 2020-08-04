@@ -1,0 +1,8 @@
+.main
+  .h2 作業開始
+  .main-contents
+    = form_with model: [@post], html: {class: "contents"}, local: true do |f|
+      = f.text_field :product_name, class: 'contents--productname', placeholder: '品名'
+      = f.text_field :work_name, class: 'contents--workname', placeholder: '作業内容'
+      = f.submit 'スタート', class: 'contents--start'
+    
