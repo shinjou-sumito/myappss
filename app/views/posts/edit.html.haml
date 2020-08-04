@@ -1,0 +1,8 @@
+.main
+  .h2 作業終了
+  .main-contents
+    = form_with model: [@post], html: {class: "contents"}, local: true do |f|
+      = f.text_field :quantity, class: 'contents--quantity', placeholder: '数量'
+      = f.text_field :text, class: 'contents--text', placeholder: 'コメント'
+      = f.submit 'ストップ', class: 'contents--stop'
+    

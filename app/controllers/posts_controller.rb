@@ -12,8 +12,21 @@ class PostsController < ApplicationController
     redirect_to root_path
   end
 
+  def edit
+    @post = Post.find(params[:id])
+  end
+
+  def update
+    post = Post.find(params[:id])
+    post.update(post_params)
+  end
+
   private
   def post_params
-    params.require(:post).permit(:name, :product_name, :work_name)
+    params.require(:post).permit(:name, :product_name, :work_name).merge(user_id: current_user.id)
+  end
+
+  def post_params
+    params.require(:post).permit(:quantity, :text).merge(user_id: current_user.id)
   end
 end
