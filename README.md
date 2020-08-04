@@ -1,4 +1,4 @@
-# Pictweet DB設計
+# myappss DB設計
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
@@ -8,14 +8,14 @@
 ### Association
 - has_many :posts
 
-## posttsテーブル
+## postsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
 |product_name|string|null: false|
 |work_name|string|null: false|
 |quantity|integer|null: false|
-|comment|text||
+|text|text||
 |user_id|integer|null: false, foreign_key: true|
 ### Association
 - belongs_to :user
