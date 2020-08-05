@@ -18,7 +18,7 @@ class PostsController < ApplicationController
 
   def update
     post = Post.find(params[:id])
-    post.update(post_params)
+    post.update(update_params)
   end
 
   private
@@ -26,7 +26,7 @@ class PostsController < ApplicationController
     params.require(:post).permit(:name, :product_name, :work_name).merge(user_id: current_user.id)
   end
 
-  def post_params
+  def update_params
     params.require(:post).permit(:quantity, :text).merge(user_id: current_user.id)
   end
 end
