@@ -2,7 +2,8 @@
   .main-title
     .h1 工数入力画面
     %form.Form 
-      = link_to "作業入力", new_post_path(@post), method: :get, class: 'Button'
+      = link_to "作業入力", new_post_path(post.id), method: :get, class: 'Button'
+      = link_to "作業終了", edit_post_path(post.id), method: :get, class: 'Button'
       = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'Button'
   .main
     .main-contents

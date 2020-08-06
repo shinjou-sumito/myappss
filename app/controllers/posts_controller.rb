@@ -19,6 +19,7 @@ class PostsController < ApplicationController
   def update
     post = Post.find(params[:id])
     post.update(update_params)
+    redirect_to root_path
   end
 
   private
