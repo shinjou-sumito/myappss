@@ -31,3 +31,4 @@ class PostsController < ApplicationController
     params.require(:post).permit(:quantity, :text).merge(user_id: current_user.id)
   end
 end
+ 
