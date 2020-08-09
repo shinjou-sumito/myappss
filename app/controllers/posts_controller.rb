@@ -9,7 +9,7 @@ class PostsController < ApplicationController
 
   def create
     Post.create(post_params)
-    redirect_to root_path
+    redirect_to controller: :users, action: :show, id: current_user.id
   end
 
   def edit
