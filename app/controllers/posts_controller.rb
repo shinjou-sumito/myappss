@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.all
+    @posts = Post.all.order("created_at DESC")
   end
 
   def new
@@ -19,7 +19,7 @@ class PostsController < ApplicationController
   def update
     post = Post.find(params[:id])
     post.update(update_params)
-    redirect_to root_path
+    redirect_to controller: :users, action: :show, id: current_user.id
   end
 
   private

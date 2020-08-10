@@ -26,7 +26,7 @@
       .text
         備考
     - @posts.each do |post|  
-      .main-contents
+      .main-contents-display
         .name
           = post.name
         .product_name
@@ -46,4 +46,4 @@
         .text
           = post.text
         .end  
-          = link_to "作業終了", edit_post_path(post.id), method: :get, class: 'Button'  
+         
