@@ -6,6 +6,7 @@
       
       = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'Button'
   .main
+    
     .main-contents
       .name
         名前
@@ -26,7 +27,7 @@
       .text
         備考
     - @posts.each do |post|  
-      .main-contents-display
+      .main-contents
         .name
           = post.name
         .product_name

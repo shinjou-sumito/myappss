@@ -1,10 +1,10 @@
-.wrapper
+.show-wrapper
   .main-title
     .h1 工数入力画面
     %form.Form 
      
       
-      = link_to "戻る", root_path, class: 'Button'
+      = link_to "戻る", root_path, class: 'returnButton'
   .main
     .main-contents
       .name
@@ -25,8 +25,12 @@
         工数
       .text
         備考
+      .end
+        作業終了
+      .destroy
+        削除    
     - @posts.each do |post|  
-      .main-contents
+      .main-contents-box
         .name
           = post.name
         .product_name
@@ -46,4 +50,6 @@
         .text
           = post.text
         .end  
-          = link_to "作業終了", edit_post_path(post.id), method: :get, class: 'Button'  
+          = link_to "作業終了", edit_post_path(post.id), method: :get, class: 'showButton'
+        .destroy  
+          = link_to "作業終了", edit_post_path(post.id), method: :get, class: 'showButton'
