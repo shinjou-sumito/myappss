@@ -3,10 +3,8 @@
     .h1 工数一覧画面
     %form.Form 
       = link_to "作業入力", new_post_path(@posts), method: :get, class: 'Button'
-      
       = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'Button'
   .main
-    
     .main-contents
       .name
         名前
@@ -24,8 +22,6 @@
         数量
       .production_costs
         工数(1台/分)
-      -# .text
-      -#   備考
     - @posts.each do |post|  
       .main-contents
         .name
@@ -55,6 +51,6 @@
             - minute = time/60
             - m = minute.to_f
             - costs = m/q
-            = costs
+            = costs.round(1)
            
          

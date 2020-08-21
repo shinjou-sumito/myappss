@@ -2,8 +2,6 @@
   .main-title
     .h1 工数入力画面
     %form.Form 
-     
-      
       = link_to "戻る", root_path, class: 'returnButton'
   .main
     .main-contents
@@ -21,10 +19,6 @@
         作業時間(分)
       .quantity
         数量
-      -# .production_costs
-      -#   工数
-      -# .text
-      -#   備考
       .end
         作業終了
       .destroy
@@ -50,10 +44,6 @@
             = minute
         .quantity
           = post.quantity
-        -# .production_costs
-        -#   fffff
-        -# -# .text
-        -#   = post.text
         .end  
           - if post.created_at != post.updated_at
             = ""
