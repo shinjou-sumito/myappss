@@ -52,7 +52,8 @@
             - times = post.updated_at - post.created_at
             - time = times.to_i
             - minute = time/60
-            -  costs = minute/q
+            - m = minute.to_f
+            - costs = m/q
             = costs
-        
+           
          
