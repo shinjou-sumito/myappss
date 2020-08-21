@@ -37,7 +37,8 @@
         .created_at 
           = post.created_at.strftime("%H:%M")
         .updated_at
-          = post.updated_at.strftime("%H:%M")
+          - if post.created_at != post.updated_at
+            = post.updated_at.strftime("%H:%M")
         .work_time
           - if post.created_at != post.updated_at
             - times = post.updated_at - post.created_at
