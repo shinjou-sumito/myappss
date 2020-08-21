@@ -18,13 +18,13 @@
       .updated_at
         終了時間
       .work_time
-        作業時間
+        作業時間(分)
       .quantity
         数量
-      .production_costs
-        工数
-      .text
-        備考
+      -# .production_costs
+      -#   工数
+      -# .text
+      -#   備考
       .end
         作業終了
       .destroy
@@ -40,16 +40,24 @@
         .created_at 
           = post.created_at.strftime("%H:%M")
         .updated_at
-          = post.updated_at.strftime("%H:%M")
+          - if post.created_at != post.updated_at
+            = post.updated_at.strftime("%H:%M")
         .work_time
-          rrrr
+          - if post.created_at != post.updated_at
+            - times = post.updated_at - post.created_at
+            - time = times.to_i
+            - minute = time/60
+            = minute
         .quantity
           = post.quantity
-        .production_costs
-          fffff
-        .text
-          = post.text
+        -# .production_costs
+        -#   fffff
+        -# -# .text
+        -#   = post.text
         .end  
-          = link_to "作業終了", edit_post_path(post.id), method: :get, class: 'showButton'
+          - if post.created_at != post.updated_at
+            = ""
+          - else
+            = link_to "作業終了", edit_post_path(post.id), method: :get, class: 'showButton'
         .destroy  
-          = link_to "作業終了", edit_post_path(post.id), method: :get, class: 'showButton'
+          = link_to "削除", post_path(post.id), method: :delete , class: 'showButton'

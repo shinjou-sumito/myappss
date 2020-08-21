@@ -8,9 +8,19 @@ class PostsController < ApplicationController
   end
 
   def create
-    Post.create(post_params)
-    redirect_to controller: :users, action: :show, id: current_user.id
+    @post = Post.create(post_params)
+    if @post.name == "" || @post.product_name == "" || @post.work_name == ""
+      redirect_to action: :new
+    else  
+      redirect_to controller: :users, action: :show, id: current_user.id
+    end  
   end
+
+  def destroy
+    post = Post.find(params[:id])
+    post.destroy
+    redirect_to controller: :users, action: :show, id: current_user.id
+  end  
 
   def edit
     @post = Post.find(params[:id])

@@ -1,6 +1,6 @@
 .wrapper
   .main-title
-    .h1 工数入力画面
+    .h1 工数一覧画面
     %form.Form 
       = link_to "作業入力", new_post_path(@posts), method: :get, class: 'Button'
       
@@ -19,13 +19,13 @@
       .updated_at
         終了時間
       .work_time
-        作業時間
+        作業時間(分)
       .quantity
         数量
       .production_costs
-        工数
-      .text
-        備考
+        工数(1台/分)
+      -# .text
+      -#   備考
     - @posts.each do |post|  
       .main-contents
         .name
@@ -39,12 +39,20 @@
         .updated_at
           = post.updated_at.strftime("%H:%M")
         .work_time
-          rrrr
+          - if post.created_at != post.updated_at
+            - times = post.updated_at - post.created_at
+            - time = times.to_i
+            - minute = time/60
+            = minute
         .quantity
           = post.quantity
         .production_costs
-          fffff
-        .text
-          = post.text
-        .end  
+          - q = post.quantity
+          - if post.created_at != post.updated_at
+            - times = post.updated_at - post.created_at
+            - time = times.to_i
+            - minute = time/60
+            -  costs = minute/q
+            = costs
+        
          
