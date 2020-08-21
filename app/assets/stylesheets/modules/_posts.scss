@@ -35,17 +35,37 @@
     }
   }  
   .main {
-    height: 100vh;
+    background-color:#ffffe0;
+    box-sizing: border-box;
     margin: 40px;
+    .search-form {
+      width: 100%;
+      margin: 5px 0 15px;
+      padding: 10px;
+      font-family: "游ゴシック", "YuGothic";
+      .search-input {
+        width: 30%;
+        margin-right: 10px;
+        padding: 5px;
+      }  
+      .search-btn {
+        width: 5%;
+        padding: 5px;
+        background-color:lightblue;
+      }
+
+      
+    }
     
     .main-contents {
+      box-sizing: border-box;
+      background-color:#ffffe0;
       display: flex;
       justify-content: center;
       text-align: center;
       .name, .product_name, .work_name, .created_at,
       .updated_at, .work_time, .production_costs,
       .quantity, .text {
-        
         width: 20%;
         font-size: 1.3vmax;
         padding: 4px;
@@ -55,13 +75,14 @@
       }
     }
     .main-contents-box {
+      box-sizing: border-box;
+      background-color:#ffffe0;
       display: flex;
       justify-content: center;
       text-align: center;
       .name, .product_name, .work_name, .created_at,
       .updated_at, .work_time, .production_costs,
       .quantity, .text {
-        
         width: 20%;
         font-size: 1.3vmax;
         padding: 4px;
@@ -72,73 +93,4 @@
     } 
   }  
 }  
-    // &__side {
-    //   background-color: green;
-    //   border-right: 2px solid black;
-    //   height: 100vh;
-    //   width: 30vw;
-    //   .h2 {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     font-size: 30px;
-    //   }
-//       .side__contents {
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         border-bottom: 2px solid black;
-//         &--productname, &--workname {
-//           width: 300px;
-//           margin-bottom: 15px;
-//           font-size: 16px;
-//           padding: 15px;
-//           border: 1px solid #b5aaa  
-//         }                 
-//         &--start, { 
-//           display: block;
-//           width: 100px;
-//           margin: 30px;
-//           padding: 15px;
-//           border: 1px solid white;
-//           background-color: lightblue;
-//           color:white;
-//         }
-//       }  
-//       .edit {
-//         .side__contentstop {        
-//           display: flex;
-//           flex-direction: column;
-//           align-items: center;
-//           &--quantity {
-//             width: 300px;
-//             margin-bottom: 15px;
-//             font-size: 16px;
-//             padding: 15px;
-//             border: 1px solid #b5aaa 
-//           }
-//           &--comments {
-//             margin: 50px 0;
-//             width: 300px;
-//             height: 150px;
-//           }  
-//           &--stop { 
-//             box-sizing: border-box;
-//             display: block;
-//             width: 100px;
-//             margin: 30px;
-//             padding: 15px;
-//             border: 1px solid white;
-//             background-color: lightblue;
-//             color:white;
-//           }
-//         }    
-//       } 
-//     }    
-//     &__contents {
-//       background-color: blue;
-//       width: 70vw;
-      
-//     }
-//   }  
-// }  
+ 

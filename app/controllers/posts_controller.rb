@@ -32,6 +32,10 @@ class PostsController < ApplicationController
     redirect_to controller: :users, action: :show, id: current_user.id
   end
 
+  def search
+    @posts = Post.search(params[:keyword])
+  end
+
   private
   def post_params
     params.require(:post).permit(:name, :product_name, :work_name).merge(user_id: current_user.id)

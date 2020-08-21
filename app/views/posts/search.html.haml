@@ -1,9 +1,8 @@
 .wrapper
   .main-title
-    .h1 工数一覧画面
+    .h1 工数検索画面
     %form.Form 
-      = link_to "作業入力", new_post_path(@posts), method: :get, class: 'Button'
-      = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'Button'
+      = link_to "戻る", root_path, class: 'returnButton'
   .main
     = form_with(url: search_posts_path, local: true, method: :get, class: "search-form") do |f| 
       = f.text_field :keyword, placeholder: "名前 品名 作業名", class: "search-input" 
