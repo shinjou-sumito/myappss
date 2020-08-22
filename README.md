@@ -1,5 +1,5 @@
 # README
-![工数管理システム]([![Image from Gyazo](https://i.gyazo.com/28c5da856ac4133a5a95995cffe66f90.png)](https://gyazo.com/28c5da856ac4133a5a95995cffe66f90)
+[![Image from Gyazo](https://i.gyazo.com/77b72a4a71bf414e790046e865b083e9.png)](https://gyazo.com/77b72a4a71bf414e790046e865b083e9)
 # myappss DB設計
 ## usersテーブル
 |Column|Type|Options|
