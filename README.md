@@ -1,5 +1,5 @@
 # README
-
+![ramenTimer](https://gyazo.com/28c5da856ac4133a5a95995cffe66f90)
 # myappss DB設計
 ## usersテーブル
 |Column|Type|Options|
