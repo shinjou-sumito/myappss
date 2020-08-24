@@ -12,7 +12,10 @@
 <li>トップ画面</li>
 
 [![Image from Gyazo](https://i.gyazo.com/77b72a4a71bf414e790046e865b083e9.png)](https://gyazo.com/77b72a4a71bf414e790046e865b083e9)
+<li>作業入力画面</li>
 
+[![Image from Gyazo](https://i.gyazo.com/0b0afbbd96553879f4f6863ac3ff8813.png)](https://gyazo.com/0b0afbbd96553879f4f6863ac3ff8813)
+<li>作業終了画面</li>
 
 # myappss DB設計
 ## usersテーブル
