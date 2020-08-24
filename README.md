@@ -12,11 +12,18 @@
 <li>トップ画面</li>
 
 [![Image from Gyazo](https://i.gyazo.com/77b72a4a71bf414e790046e865b083e9.png)](https://gyazo.com/77b72a4a71bf414e790046e865b083e9)
-<li>作業入力画面</li>
+<li>作業入力画面 作業者名 品名 作業内容を入力する</li>
 
 [![Image from Gyazo](https://i.gyazo.com/0b0afbbd96553879f4f6863ac3ff8813.png)](https://gyazo.com/0b0afbbd96553879f4f6863ac3ff8813)
-<li>作業終了画面</li>
+<li>工数入力画面 作業終了を押下する</li>
 
+[![Image from Gyazo](https://i.gyazo.com/b59b82c540f5e80b6921fbce345d44f5.png)](https://gyazo.com/b59b82c540f5e80b6921fbce345d44f5)
+<li>作業終了画面 数量を入力</li>
+
+[![Image from Gyazo](https://i.gyazo.com/10c1f41a84b9dbd16120a671a6178719.png)](https://gyazo.com/10c1f41a84b9dbd16120a671a6178719)
+<li>トップ画面 作業時間 一台あたり工数を確認できる</li>
+
+[![Image from Gyazo](https://i.gyazo.com/a5e846d63b58528c49355afe120007fb.png)](https://gyazo.com/a5e846d63b58528c49355afe120007fb)
 # myappss DB設計
 ## usersテーブル
 |Column|Type|Options|
