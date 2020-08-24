@@ -24,6 +24,12 @@
 <li>トップ画面 作業時間 一台あたり工数を確認できる</li>
 
 [![Image from Gyazo](https://i.gyazo.com/a5e846d63b58528c49355afe120007fb.png)](https://gyazo.com/a5e846d63b58528c49355afe120007fb)
+
+## 🌐 App URL
+
+## ツール
+
+(https://user-images.githubusercontent.com/39142850/71774533-1ddf1780-2fb4-11ea-8560-753bed352838.png)
 # myappss DB設計
 ## usersテーブル
 |Column|Type|Options|
