@@ -29,7 +29,7 @@
 
 ## ツール
 
-[!(https://user-images.githubusercontent.com/39142850/71774533-1ddf1780-2fb4-11ea-8560-753bed352838.png)]
+(https://user-images.githubusercontent.com/39142850/71774533-1ddf1780-2fb4-11ea-8560-753bed352838.png)
 # myappss DB設計
 ## usersテーブル
 |Column|Type|Options|
