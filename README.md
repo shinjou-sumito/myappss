@@ -5,6 +5,8 @@
 ## 主要画面のキャプチャ・簡単な説明
 <li>トップ画面</li>
 
+[![Image from Gyazo](https://i.gyazo.com/a24f90cc96eee2f28c4961192b9f0381.png)](https://gyazo.com/a24f90cc96eee2f28c4961192b9f0381)
+
 [![Image from Gyazo](https://i.gyazo.com/5f7faa98b5824ad5c4c9e918a08bdef4.png)](https://gyazo.com/5f7faa98b5824ad5c4c9e918a08bdef4)
 
 [![Image from Gyazo](https://i.gyazo.com/77b72a4a71bf414e790046e865b083e9.png)](https://gyazo.com/77b72a4a71bf414e790046e865b083e9)
