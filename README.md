@@ -3,11 +3,13 @@
 ## なぜ開発したのか
 繰り返し生産される製品に対し、データを蓄積することにより改善点をつきとめ、業務の効率化をはかる。
 ## 主要画面のキャプチャ・簡単な説明
-<li>トップ画面 新規登録</li>
+<li>新規登録画面</li>
 
 [![Image from Gyazo](https://i.gyazo.com/a24f90cc96eee2f28c4961192b9f0381.png)](https://gyazo.com/a24f90cc96eee2f28c4961192b9f0381)
+<li>ログイン画面</li>
 
 [![Image from Gyazo](https://i.gyazo.com/5f7faa98b5824ad5c4c9e918a08bdef4.png)](https://gyazo.com/5f7faa98b5824ad5c4c9e918a08bdef4)
+<li>トップ画面</li>
 
 [![Image from Gyazo](https://i.gyazo.com/77b72a4a71bf414e790046e865b083e9.png)](https://gyazo.com/77b72a4a71bf414e790046e865b083e9)
 
