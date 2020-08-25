@@ -26,7 +26,7 @@
 [![Image from Gyazo](https://i.gyazo.com/a5e846d63b58528c49355afe120007fb.png)](https://gyazo.com/a5e846d63b58528c49355afe120007fb)
 
 ## 今後実装してみたい機能
-<li>インクリメンタルサーチ</li>
+<li>検索機能にインクリメンタルサーチ</li>
 
 ## 🌐 App URL
 
