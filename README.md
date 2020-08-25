@@ -32,7 +32,6 @@
 ### https://pure-retreat-23359.herokuapp.com/
 
 <li>テストアカウント</li>
-
     メールアドレス：test@test
     パスワード：ttt000
 
