@@ -32,7 +32,7 @@
 ### https://pure-retreat-23359.herokuapp.com/
 
 * テストアカウント
-  * メールアドレス：http\://sample@test.com
+  * メールアドレス：```sample@test.com```
   * パスワード：ssss1111
 
 
